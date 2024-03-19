@@ -548,97 +548,64 @@ video {
   display: flex;
 }
 
-.h-24 {
-  height: 6rem;
+.grid {
+  display: grid;
 }
 
-.h-max {
-  height: -moz-max-content;
-  height: max-content;
-}
-
-.h-full {
-  height: 100%;
+.h-3 {
+  height: 0.75rem;
 }
 
 .h-\[10vh\] {
   height: 10vh;
 }
 
-.h-9 {
-  height: 2.25rem;
+.h-\[25vh\] {
+  height: 25vh;
 }
 
-.h-1 {
-  height: 0.25rem;
+.h-\[2vw\] {
+  height: 2vw;
 }
 
-.h-5 {
-  height: 1.25rem;
+.h-full {
+  height: 100%;
 }
 
-.h-3\/4 {
-  height: 75%;
-}
-
-.w-screen {
-  width: 100vw;
+.w-3 {
+  width: 0.75rem;
 }
 
 .w-\[10vw\] {
   width: 10vw;
 }
 
-.w-8 {
-  width: 2rem;
+.w-\[18vh\] {
+  width: 18vh;
 }
 
-.w-10 {
-  width: 2.5rem;
+.w-\[2vw\] {
+  width: 2vw;
 }
 
-.w-60 {
-  width: 15rem;
+.w-\[500px\] {
+  width: 500px;
 }
 
-.w-5 {
-  width: 1.25rem;
+.w-full {
+  width: 100%;
 }
 
-.w-3\/5 {
-  width: 60%;
+.grid-flow-col {
+  grid-auto-flow: column;
 }
 
-.w-1\/4 {
-  width: 25%;
+.grid-cols-\[8vw_1fr_8vw\] {
+  grid-template-columns: 8vw 1fr 8vw;
 }
 
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[10\] {
-  width: 10;
-}
-
-.w-\[1\] {
-  width: 1;
-}
-
-.w-\[150px\] {
-  width: 150px;
-}
-
-.w-\[300px\] {
-  width: 300px;
-}
-
-.content-center {
-  align-content: center;
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -649,10 +616,24 @@ video {
   justify-content: center;
 }
 
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+.justify-items-center {
+  justify-items: center;
+}
+
+.gap-32 {
+  gap: 8rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .bg-black {
@@ -660,27 +641,27 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
 .bg-neutral-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(23 23 23 / var(--tw-bg-opacity));
 }
 
-.bg-blue-400 {
+.bg-red-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
-.align-middle {
-  vertical-align: middle;
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.align-bottom {
-  vertical-align: bottom;
+.p-8 {
+  padding: 2rem;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .text-white {
