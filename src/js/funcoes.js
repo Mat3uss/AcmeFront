@@ -41,52 +41,13 @@ export async function getGenero(id) {
 }
 
 export async function deleteGenero(id) {
-    const url = `http://localhost:8080/v3/acmefilmes/genero/${id}`
+    const url = `http://localhost:8080/v2/acmefilmes/genero/${id}`
     const options={
         method: 'DELETE'
     }
     const response = await fetch(url, options)
     return response.ok
 }
-
-export async function postGenero (genero){
-  
-    const url = `http://localhost:8080/v2/acmefilmes/genero`
-    const options = {
-        method:'POST',
-        headers: {
-            'Content-Type':'application/json'
-        },
-        body: JSON.stringify(genero)
-    }
-    const response = await fetch (url,options)
-    return response.ok
-}
-
-export async function putGenero(id, genero) {
-    try {
-        const url = `http://localhost:8080/v2/acmefilmes/genero/atualizado/${id}`
-        const options = {
-            method: 'PUT',
-            headers: {
-                'Content-Type':'application/json',
-            },
-            body: JSON.stringify(genero),
-        }
-        const response = await fetch(url, options)
-        if (!response.ok) {
-            console.error('Resposta da API não OK:', response.status, response.statusText)
-            return false
-        }
-
-        const data = await response.json()
-        return data.status
-    } catch (error) {
-        console.error('Erro ao fazer a requisição:', error)
-        return false
-    }
-}
-
 
 //Atores
 
@@ -95,7 +56,7 @@ export async function getAtores() {
     const url = `http://localhost:8080/v2/acmefilmes/atores` 
     const response = await fetch(url)
     const data = await response.json()
-    return data.ator
+    return data.atores
 }
 
 export async function getAtor(id) {

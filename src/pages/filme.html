@@ -13,40 +13,38 @@
     <script type="module" src="../js/filme-info.js" defer></script>
     <link rel="icon" href="../../img/logo.png">
     <title>Acme filmes</title>
-</head>
-<header class="flex bg-red-600 h-[10vh] w-full">
-    <div class="flex items-center justify-center text-white bg-black w-[10vw]">
-        <img src="/img/acmelogo.png" alt="">    
-    </div>
-    <div class="flex items-center justify-center text-white hover:bg-black w-[10vw]">
-        Ínicio
-    </div>
-    <div class="flex items-center justify-center text-white hover:bg-black w-[10vw]">
-        Filmes
-    </div>
-    <div class="flex items-center justify-center text-white hover:bg-black w-[10vw]">
-        Séries
-    </div>
-    <div class="flex items-center justify-center text-white hover:bg-black w-[10vw]">
-        Novidades
-    </div>
-    <div class="flex items-center justify-center text-white hover:bg-black w-[10vw]">
-        Categorias
-    </div>
-        <div class="flex items-center justify-center">
-        <input class="w-[500px]" type="text">
-    </div>
-    <div class="flex items-center justify-center text-white  w-[10vw]">
-        <button class=""></button>
-        <img src="../img/Vector.png" alt="" class="">
-    </div>
+
+    <header class="flex bg-red-600 h-[10vh] w-full">
+        <div class="flex items-center justify-center text-white bg-black w-[10vw]">
+            <img src="/img/logo.png" alt="">    
+        </div>
+        <div class="flex items-center justify-center text-white hover:bg-black w-[10vw]">
+            Ínicio
+        </div>
+        <div class="flex items-center justify-center text-white hover:bg-black w-[10vw]">
+            Filmes
+        </div>
+        <div class="flex items-center justify-center text-white hover:bg-black w-[10vw]">
+            Séries
+        </div>
+        <div class="flex items-center justify-center text-white hover:bg-black w-[10vw]">
+            Novidades
+        </div>
+        <div class="flex items-center justify-center text-white hover:bg-black w-[10vw]">
+            Categorias
+        </div>
+            <div class="flex items-center justify-center border-none">
+            <input class="w-[500px]" type="text">
+        </div>
+        <div class="flex items-center justify-center text-white  w-[10vw]">
+            <button class=""></button>
+            <img src="../img/Vector.png" alt="" class="">
+        </div>
 
 
-</header>
-<body class="bg-gradient-to-b from-black from-50% to-principal to-100% h-screen">
-    <header class="p-12">
-        <img class="w-52" src="../../img/logo.png" alt="logo">
     </header>
+</head>
+<body class="bg-gradient-to-b from-black from-50% to-principal to-100% h-screen">
     <main class="">
         <div class="flex items-start gap-4 px-20">
             <a class="flex items-center justify-center gap-4" href="../pages/inicial.html">
@@ -57,24 +55,21 @@
             </a>
         </div>
         <div id="container" class="flex items-center justify-center flex-row gap-20 pt-10">
-            <img id="filme-img" class="w-64" alt="filme">
-            <div class="flex flex-col gap-2 ">
+            <img id="filme-img" class="w-64" src="../../img/oLobo.jfif" alt="filme">
+            <div class="flex flex-col gap-4">
                 <h1 id="filme-nome" class="text-white font-fontDestaque font-bold text-6xl">
-                    nome filme
                 </h1>
                 <div class="flex flex-row">
                     <p id="filme-info" class="text-white font-font text-lg">
-                        data | hora | genero
                     </p>
                 </div>
                 <p id="filme-sinopse" class="text-white text-[16px] w-[600px] py-8">
-                    texto
                 </p>
-                <h1 class="text-white text-[16px] font-semibold">Comprar:</h1>
-                <div class="bg-principal w-44 h-12 rounded-xl flex flex-row items-center justify-center text-white font-font gap-1">
+                <h1 class="text-white text-[16px] font-bold">Comprar:</h1>
+                <div class="bg-principal w-64 h-14 rounded-xl flex flex-row items-center justify-center text-white font-font gap-1">
                     <button class="bg-principal rounded-md w-16 flex items-center justify-center gap-2">
-                        <span class="text-white font-font text-[20px] font-semibold">R$</span>
-                        <span id="filme-valor" class="text-white font-font text-[20px] font-semibold">20,00</span>
+                        <span class="text-white font-font text-[16px] font-semibold">R$</span>
+                        <span id="filme-valor" class="text-white font-font text-[16px] font-semibold">20,00</span>
                     </button>
                 </div>
             </div>

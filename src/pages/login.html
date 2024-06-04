@@ -1,45 +1,47 @@
 <!doctype html>
-<html>
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../src/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="../src/input.css">
+    <link href="../output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Capriola&family=Protest+Strike&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../img/logo.png">
+    <title>Acme filmes</title>
 </head>
-
-<body class="min-h-screen flex items-center justify-center flex-col bg-filmes bg-no-repeat bg-cover">
-
-    <div class="bg-red-600 opacity-85 text-white p-4 h-[764px] w-[560px] rounded-3xl flex justify-center">
-            <div class="itens-center justify-center flex flex-col gap-6">
-                <div class="itens-center justify-center flex flex-col gap-6">
-                        <div class="flex items-center justify-center">
-
-                    <img src="../img/profile.png" alt="" class="">
-
-    </div>
-    <div>
-        <input type="text" placeholder="Nome" class="w-[405px] h-[70px] rounded-xl">
-    </div>
-     <div>
-        <input type="text" placeholder="Email" class="w-[405px] h-[70px] rounded-xl">   
-    </div>     
-    <div>
-        <input type="text" placeholder="Senha" class="w-[405px] h-[70px] rounded-xl">
-    </div>
-    <div class="flex justify-center">
-       <button class="h-[50px] w-[150px] bg-black flex justify-center items-center rounded-full">
-        <a href='../src/home.html'>Entrar</a>
-    </button>
-</div>
-    </div>
-
- 
-      </div>
-
-    </header>
+<body class="bg-gradient-to-b from-black from-50% to-principal to-100% h-screen">
+    <main class="flex items-center justify-center flex-col gap-16 py-10 px-80">
+        <img class="w-72 " src="../../img/logo.png" alt="logo">
+        <div class="bg-transparente rounded-md w-[50%] h-[520px] flex items-center flex-col gap-8 py-12">
+            <h1 class="font-fontDestaque text-white font-extrabold text-6xl">
+                Login
+            </h1>
+            <div class="flex flex-row bg-black rounded-md items-center justify-between px-4 w-[50%] h-16">
+                <input type="text" class="outline-none w-full h-full bg-transparent border-none" placeholder="Nome..."> 
+            </div>
+            <div class="flex flex-row bg-black rounded-md items-center justify-between px-4 w-[50%] h-16">
+                <input type="password" class="outline-none w-full h-full bg-transparent border-none" placeholder="Email..."> 
+            </div> 
+            <div class="flex flex-row bg-black rounded-md items-center justify-between px-4 w-[50%] h-16">
+                <input type="password" class="outline-none w-full h-full bg-transparent border-none" placeholder="Senha..."> 
+            </div> 
+            <a href="./inicial.html">
+                <button class="text-white font-font font-semibold bg-principal w-40 h-12 rounded-xl hover:bg-black scale-x-100">
+                    Login
+                </button>
+            </a>
+            
+            <a href="./adm.html">
+                <button class="text-white font-font font-semibold bg-principal w-40 h-12 rounded-xl hover:bg-black scale-x-100">
+                    Adminstrador
+                </button>
+            </a>
+        </div>
     </main>
     
 </body>
-
 </html>
