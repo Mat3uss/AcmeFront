@@ -40,23 +40,40 @@
 
     </header>
 
-    <main class="grid grid-cols-[2fr_3fr]">
-        <div class="grid-rows-2">
-            <p class="font-bold text-xl">
-                Rua Do Medo 1978
-            </p>
-            <p class="font-bold text-white text-xl">
-                Na cidade amaldiçoada de Shadyside, uma onda de assassinatos aterroriza  o Acampamento Nightwing.
-            </p>
-        </div>
-        <img src="../img/bgdesc.png" alt="" class="h-full w-full object-cover object-center">
-    </main>
-<footer>
 
-</footer>
-        
-    </main>
-    
-</body>
-
+    <body class="bg-gradient-to-b from-black from-50% to-red-900 to-100% h-screen">
+        <header class="p-12">
+            <img class="w-52" src="../../img/logo.png" alt="logo">
+        </header>
+        <main class="flex justify-start">
+            <div class="flex items-start gap-4 px-20">
+                <a class="flex items-center justify-center gap-4" href="../pages/inicial.html">
+                    <img class="w-6" src="../../img/voltar.png" alt="">
+                </a>
+            </div>
+            <div id="container" class="flex items-center justify-center flex-row gap-20 pt-10">
+                <img id="filme-img" class="w-64" src="" alt="filme">
+                <div class="flex flex-col gap-4">
+                    <h1 id="filme-nome" class="text-white font-fontDestaque font-bold text-3xl">
+                       
+                    </h1>
+                    <div class="flex flex-row">
+                        <p id="filme-info" class="text-white font-font text-lg">
+                           
+                        </p>
+                    </div>
+                    <p id="filme-sinopse" class="text-white text-[16px] w-[600px] py-8">
+                      
+                    </p>
+                    <h1 class="text-white text-[16px] font-bold">Comprar:</h1>
+                    <div class="bg-red-950 w-64 h-14 rounded-xl flex flex-row items-center justify-center text-white font-font gap-1">
+                        <button class="bg-red-950 rounded-md w-16 flex items-center justify-center gap-2">
+                            <span class="text-white font-font text-[16px] font-semibold">R$</span>
+                            <span id="filme-valor" class="text-white font-font text-[16px] font-semibold">20,00</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>
